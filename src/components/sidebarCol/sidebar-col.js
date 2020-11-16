@@ -30,7 +30,6 @@ render(){
            writeSearchs ={this.writeSearch}
            showProfilesState={this.state.showProfile}
            />
-           
            <FeedTrends
            users={this.state.users}
            searchUser={this.state.searchUser} 
