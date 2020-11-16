@@ -24,13 +24,13 @@ render(){
    
     return (
         <div className="t-sidebar-col">
-        
+        <h2 className="sidebar-title">Qué está pasando</h2>
            <SearchSideBar className="lupa"
            showProfiles={this.showProfiles}
            writeSearchs ={this.writeSearch}
            showProfilesState={this.state.showProfile}
            />
-           <h2 className="sidebar-title">Qué está pasando</h2>
+           
            <FeedTrends
            users={this.state.users}
            searchUser={this.state.searchUser} 
