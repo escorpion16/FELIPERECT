@@ -55,8 +55,9 @@
 }
 
 .lupa{
-    position: absolute;
-    margin-top: 3px;
+
+    margin-top: 0px;
     left: 30px;
+    outline: none;
 }
 

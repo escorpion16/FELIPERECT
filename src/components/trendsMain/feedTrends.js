@@ -1,7 +1,8 @@
 import React from "react";
-import TrendsMain from "./trendsMain/trendsMain";
-import {Trend} from "../trend"
-
+import TrendsMain from "./trendsMain";
+import {Trend} from "../../trend"
+import SearchDropdown from "../sidebarCol/Profiles";
+import './styles.css'
 class FeedTrends extends React.Component {
     constructor(props){
         super();
@@ -11,8 +12,16 @@ class FeedTrends extends React.Component {
     }
 
     render(){
+        
         return(
-           <div>
+        <div>
+            
+            {
+            this.props.showProfiles ? (<div className="container-users">
+            <div className=""><SearchDropdown
+                users={this.props.users}
+                searchUser={this.props.searchUser}/></div></div>) :  null
+            }
                {
                 this.state.trends.map(itemtrend => {
                     return(

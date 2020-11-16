@@ -1,8 +1,9 @@
 .search-style {
+    display: flex;
     border-radius: 50px;
     border: 1px solid rgb(219, 219, 219);
     background-color: rgb(219, 219, 219);
-    height: 3%;
+    height: 4%;
     width: 80%;
     margin-top: 5%;
     padding: 3% 0% 3% 7%;
@@ -12,9 +13,62 @@
 }
 
 .input-style{
+    height: 80%;
+    width: 80%;
     border-radius: 50px;
-    border: 1px solid rgb(219, 219, 219);
+    border: 1px solid rgb(219, 219, 219); 
     background-color: rgb(219, 219, 219);
-    outline: none;
+   
+    
+}
+
+.container-users
+{   box-sizing: border-box;
+    padding:3%;
+    width: 100%;
+    height: 50vh;
+    overflow-x: hidden;
+    overflow-y: scroll rgba(255, 0, 0, 0);
+}
+.container-profile{
+    box-sizing: border-box;
+    padding: 2%;
+    justify-content: left;
+display: flex;
+width: 100%;
+border: solid 1px grey;
+border-radius: 10px;
+box-shadow: 2px 2px teal;
+
+}
+.container-profile:hover{
+    background: rgb(171, 206, 245);
+}
+
+.profile-img{
+    border-radius: 50px;
+
+    height: 30px;
+    }
+    .col-1{
+        width: 20%;
+    }
+    .col-2{
+        text-align: left;
+    justify-content: left;
+    width: 70%;
+}
+.text-user{
+    font-size:15px;
+    font-weight: 700;
+}
+.text-userm{
+    font-size:10px;
+}
+.search-style>svg{
+    font-size: 10px;
+}
+.closeList{
+    margin-right: 10px;
     
 }
