@@ -15,6 +15,17 @@ class Tweet extends React.Component{
     constructor(){
         super();
     }
+    writeArray=()=>{
+if(this.props.comments>1000){
+    let commentsk=this.props.comments/1000+"k"
+}
+if(this.props.likes>1000){
+    let likesk=this.props.likes/1000+"k"
+}
+if(this.props.retweets>1000){
+    let retweetsk=this.props.retweets/1000+"k"
+}
+    }
     render(){
         return (
             <div className="tweet-container borderBottom">
@@ -45,10 +56,18 @@ class Tweet extends React.Component{
                     
                 </div>
                 <div className="row1 marginBottom"> 
-                
-                    <div className={`t-icon col ${this.props.selected && 'selected'}`}>{<ChatSolid/>}{this.props.comments}</div>
-                    <div className={`t-icon col ${this.props.selectedR && 'selected'}`}onClick={() => this.props.selectedRetweet(this.props.index)}><RefreshSolid className={`${this.props.selectedR && 'selected'}`}/>{this.props.retweets}</div>
-                    <div className={`t-icon col ${this.props.selectedL && 'selected'}`}onClick={() => this.props.selectedLike(this.props.index)}>{<HeartSolid/>}{this.props.likes}</div>
+                    <div className={`t-icon col ${this.props.selected && 'selected'}`}>
+                    {<ChatSolid/>}{this.props.comments >1000 ?((this.props.comments/1000).toFixed(1)+"k"):this.props.comments}
+                    </div>
+                    <div className={`t-icon col ${this.props.selectedR && 'selected'}`}
+                    onClick={() => this.props.selectedRetweet(this.props.index)}>
+                    <RefreshSolid className={`${this.props.selectedR && 'selected'}`}/>
+                    {this.props.retweets >1000 ?((this.props.retweets/1000).toFixed(1) +"k"):this.props.retweets}
+                    </div>
+                    <div className={`t-icon col ${this.props.selectedL && 'selected'}`}
+                    onClick={() => this.props.selectedLike(this.props.index)}>
+                    {<HeartSolid/>}{this.props.likes >1000 ?((this.props.likes/1000).toFixed(1) +"k"):this.props.likes}
+                    </div>
                     <p></p>
                 </div>
                 
