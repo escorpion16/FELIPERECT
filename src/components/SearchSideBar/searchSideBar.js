@@ -19,8 +19,7 @@ const SearchSideBar = (props) => {
                     value={props.searchUser}
                     onClick={props.showProfiles}
                 />
-               { props.showProfilesState ? (<div className="t-icon closeList"><XCircleOutline 
-                onClick={props.showProfiles}/></div>):null} 
+               
                 
             </div>
             

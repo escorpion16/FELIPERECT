@@ -15,7 +15,7 @@ class FeedTrends extends React.Component {
         
         return(
         <div>
-            
+            <h2 className="sidebar-title">Qué está pasando</h2>
             {
             this.props.showProfiles ? (<div className="container-users">
             <div className=""><SearchDropdown
