@@ -57,10 +57,8 @@ class Feed extends React.Component {
     }
     
     writeInInput = (evento) => {
-        console.log(this.state.tweet)
         const message = evento.target.value;
         this.setState({ newMessage: message });
-        console.log(this.state.newMessage)
         
       };
       sendMessage = () => {
