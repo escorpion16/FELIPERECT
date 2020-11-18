@@ -1,5 +1,6 @@
 import React from 'react';
 import '../SearchSideBar/style.css'
+import './styles.css'
 import { FaSistrix } from "react-icons/fa";
 import{
     XCircleOutline    
@@ -9,12 +10,12 @@ import{
 const SearchTrendBar = (props) => {
     return(
         
-            <div className="search-style ">
+            <div className="search-style-trends">
             <div className="t-icon"><FaSistrix className="lupa"/></div>
                 <input 
                     type="text" 
-                    placeholder= "Buscar en tendencias"
-                    className="input-style lupa mt"
+                    placeholder= "Buscar tendencias"
+                    className="input-style-search lupa mt"
                     onChange={props.change}
                     value={props.valueChangeInput}
                    
