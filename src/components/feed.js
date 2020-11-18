@@ -24,7 +24,7 @@ class Feed extends React.Component {
             tweets2[index].selectedRetweet=true;
         }
         this.setState({tweets: tweets2});
-        console.log(this.state.tweet)
+ 
     }
     removeTweet = (index) => {
         let tweetsClone = JSON.parse(JSON.stringify(this.state.tweets));
@@ -89,7 +89,6 @@ class Feed extends React.Component {
         
         }
     render() {
-        console.log(this.state.newMessage)
         const contextFn = {
             toggleContextMenuFn: this.toggleContextMenu,
             removeTweetFn: this.removeTweet,
