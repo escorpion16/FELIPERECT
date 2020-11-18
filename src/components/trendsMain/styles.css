@@ -23,3 +23,22 @@
     font-size: 2em;
     color: rgb(125, 126, 126);
 }
+.input-style-search{
+    height: 80%;
+    width: 80%;
+    border-radius: 2px;
+    border: 1px solid rgba(219, 219, 219, 0); 
+    background-color: rgba(219, 219, 219, 0);
+}
+.search-style-trends {
+    display: flex;
+    border: 1px solid rgba(219, 219, 219, 0);
+    background-color: rgba(219, 219, 219, 0);
+    height: 4%;
+    width: 80%;
+    margin-top: 5%;
+    padding: 3% 0% 3% 7%;
+    position: relative;
+    margin-left: 5%;
+    border-bottom: solid rgb(102, 102, 102) 1px;
+}
